@@ -1,0 +1,162 @@
+.resgister-step{
+    width: 60%;
+    margin: 0% auto 0% auto;
+}
+
+.register-step-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 2%;
+}
+
+.progress-bar{
+    width:160px;
+    height: 10px;
+    background-color: #EAEAEA !important;
+    border-radius: 10px;
+}
+.progress-bar-inner{
+    content: "";
+        width: 20px;
+        height: 10px;
+        background-color: #FFC914;
+        border-radius: 10px;
+}
+
+.pager{
+    display: flex;
+    justify-content: center;
+    width: 47px;
+    height: 26px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.pager-count{
+    padding-right: 5px;
+}
+
+.btn-back{
+    width: 50px;
+    height: 42px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.header-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.header-title-yellow{
+    color: #FFB800;
+    font-weight: 600;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif !important;
+    margin-bottom: 5%;
+}
+
+.account-type-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.card-icon{
+      padding: 0% 2% 0% 2%;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      width: 440px;
+      max-width: 440px;
+      height: 100%;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card-icon-active{
+    border: 2px solid #FFB800;
+    position: relative;
+}
+
+.card-icon-active::before{
+    position: absolute;
+    content: "SELECTED";
+    background-color: #FFB800;
+    border-radius: 5px;
+    width: 81px;
+    height: 24px;
+    font-size: 13px;
+    font-weight:bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -13px;
+    left: 40px;
+}
+
+.card-icon-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 5% 0% 5%;
+    font-size: 24px;
+    font-weight: 600;
+    width: 90%;
+    text-align: left;
+}
+
+
+.card-icon-img{
+    margin-left: 15%;
+    width: 86px;
+    height: 86px;
+    transform: translateY(-35px);
+}
+
+.card-image{
+    width: 100%;
+    height: 100%;
+}
+
+.card-icon-content{
+    margin: 0% 5% 0% 5%;
+    width: 90%;
+    height: 100%;
+}
+
+.card-icon-content p{
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+.btn-create{
+    width: 322px;
+    height: 56px;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
