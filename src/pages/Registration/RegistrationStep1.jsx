@@ -59,7 +59,7 @@ import {useNavigate} from 'react-router-dom'
                     <div className={`card-icon ${classActive2}`}  onClick={this.handleAccountChange} onChange={this.handleAccountChange}>
                         {/* card-header */}
                         <span className="card-icon-header">
-                            <span>Delear Account</span>
+                            <span>Dealer Account</span>
                             <div className="card-icon-img"><img className="card-image" src={dealerAcc} alt="" srcset="" /></div>
                         </span>
                         {/* card-content */}

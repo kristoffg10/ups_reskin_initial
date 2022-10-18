@@ -160,3 +160,260 @@
     margin-bottom: 5%;
 }
 
+.country-tel-code{
+    width: 99px;
+    height: 56px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.country-tel-code span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input-tel{
+    width: 212px;
+    height: 56px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 0% 4% 0% 4%;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input-auth-code{
+    height: 56px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding-left: 4%;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.46em;
+}
+.authentication-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.telephone-container h6{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.telephone-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.input-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.code-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.code-container h6{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.get-code{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #277DF1;
+    margin-top: 5%;
+}
+
+.email-instead{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-yellow{
+    background-color: #FFF9E3;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    color: #FFC914;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2% 0% 5% 0%;
+}
+
+.varify-container{
+    margin: 40% 0% 20% 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step3-header-title{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.form-info{
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.custom-label{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+.custom-input{
+    width: 100%;
+    height: 56px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+    padding: 0% 5% 0% 5%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.custom-textarea{
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 3%;
+    padding: 3% 5% 0% 5%;
+}
+
+.review-details{
+    display: flex;    
+    width: 360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-field{
+    position: relative;
+    width: 100%;
+    border: 1px solid #D4D4D4;
+    color: black;
+    border-radius: 10px;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 26px;
+}
+
+.info-field::before{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    font-size: 12px;
+    color: white;
+    
+    height: 20px;
+    padding: 5px 7px;
+    background-color: #FFB800;
+    border-radius: 4px;
+    top: -11px;
+    left: 15px;
+}
+.divider {
+    border-top: 2px dashed #D4D4D4;;
+    width: 95%;
+  }
+
+.header-label{
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.referal-code{
+    content: " ";
+    width: 100%;
+    height: 56px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+}
+
+.setup-pin{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-eye{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+
+.custom-input2{
+ width: 100%;
+ height: 56px;
+ background-color: #F4F4F4;
+ border-radius: 10px;
+ border: none;
+ 
+}
+
+.custom-input2[type="password"]{
+    font-size: xx-large;
+    text-decoration: dotted;
+    letter-spacing: 3px;
+    padding: 0% 3%;
+   }
+   
+.label{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 3% 0%;
+    text-align: left;
+}
+
+.btn-eye{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    border-radius: 0px 10px 10px 0px;
+    padding-right: 14px;
+}
