@@ -378,6 +378,9 @@
 }
 
 .input-eye{
+  width: 100%;
+  max-width: 375px;
+  min-width: 375px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -394,13 +397,21 @@
  
 }
 
+.custom-input2:focus{
+    outline: none;
+}
+
 .custom-input2[type="password"]{
     font-size: xx-large;
     text-decoration: dotted;
     letter-spacing: 3px;
-    padding: 0% 3%;
+    padding: 0% 4%;
    }
-   
+.custom-input2[type="text"]{
+    font-size: 15px;
+    
+    padding: 0% 4%;
+}
 .label{
     width: 100%;
     font-size: 16px;
@@ -416,4 +427,8 @@
     background-color: #F4F4F4;
     border-radius: 0px 10px 10px 0px;
     padding-right: 14px;
+}
+
+.pin-match{
+  margin-right: 20%;
 }
