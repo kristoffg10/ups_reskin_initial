@@ -1,11 +1,11 @@
 import React from "react";
-import philippines from "../../assets/images/icon/philippines.png"
-import arrowForward from "../../assets/images/icon/arrowForward.png";
-class RegistrationStep2 extends React.Component{
+import philippines from "../../../assets/images/icon/philippines.png"
+import arrowForward from "../../../assets/images/icon/arrowForward.png"
+export default class Step1 extends React.Component{
     constructor(props){
         super(props);
-
     }
+
     render(){
         return(
             <>
@@ -35,5 +35,3 @@ class RegistrationStep2 extends React.Component{
         )
     }
 }
-
-export default RegistrationStep2;

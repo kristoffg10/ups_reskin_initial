@@ -14,23 +14,33 @@ class RegistrationStep5 extends React.Component{
             eye: true,
             isMatched: false
         }
-        this.handleChange = this.handleChange.bind(this)
+        this.handleChangePin = this.handleChangePin.bind(this)
+        this.handleChangePinConfirm = this.handleChangePinConfirm.bind(this)
         this.validatePin = this.validatePin.bind(this)
         // this.handleEyeToggle =this.handleEyeToggle.bind(this)
     }
 
-    handleChange(key,value){
-        let Pin = {}
-        Pin[key] = value
-        this.setState(Pin);
-
-        if(this.state.pin !== "" || this.state.pinConfirm !== ""){
-             
+    handleChangePin(e){
+        const re = /^[0-9\b]+$/;
+        if(e.target.value === '' || re.test(e.target.value)){
+            this.setState({pin: e.target.value})
         }
+
+        // this.valiateChangePin(e.target.value)
         
     }
-    validatePin(e){
-        e.preventDefault();
+    handleChangePinConfirm(e){
+        const re = /^[0-9\b]+$/;
+        if(e.target.value === '' || re.test(e.target.value)){
+            this.setState({pinConfirm: e.target.value})
+        }
+        // this.valiateChangePin(e.target.value)
+    }
+
+        
+
+    validatePin(){
+       
         if(this.state.pin !== this.state.pinConfirm){
             this.setState({
                 isMatched: false
@@ -41,6 +51,7 @@ class RegistrationStep5 extends React.Component{
                 isMatched: true
             })
         }
+        
     }
     
     handleEye(e){
@@ -68,10 +79,10 @@ class RegistrationStep5 extends React.Component{
                     marginBottom: "4%"
                  }}>Set up your <span className="header-title-yellow">PIN</span></h1>
              <div className="setup-pin" >
-                <form onSubmit={this.validatePin}>
+             
                     <label className="label">Create 6-digit PIN</label>
                     <div className="input-eye">
-                    <input type={this.state.inputType} name="pin" className="custom-input2" value={this.state.pin} onChange={(e)=>this.handleChange('pin', e.target.value)} style={{ 
+                    <input type={this.state.inputType} name="pin" className="custom-input2" maxLength={6} value={this.state.pin} onChange={this.handleChangePin}  onKeyUp={this.validatePin} style={{ 
                         borderRadius: '10px 0px 0px 10px'
                         }}/>
                     <span className="btn-eye" onClick={() => this.handleEye()}>  {this.state.eye ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
@@ -79,7 +90,7 @@ class RegistrationStep5 extends React.Component{
                     </div>
                     <label className="label">Confirm PIN</label>
                     <div className="input-eye">
-                    <input type={this.state.inputType} name="pinConfirm"  className="custom-input2" value={this.state.pinConfirm} onChange={(e)=>this.handleChange('pinConfirm', e.target.value)}  style={{ 
+                    <input type={this.state.inputType} name="pinConfirm"  className="custom-input2" maxLength={6}  value={this.state.pinConfirm} onChange={this.handleChangePinConfirm}  onKeyUp={this.validatePin} style={{ 
                         borderRadius: '10px 0px 0px 10px'
                         }}/>
                         <span className="btn-eye" onClick={() => this.handleEye()}>{this.state.isMatched ? <span className="pin-match"><img src={iconVerified} alt="verified"  /></span> : ""}  {this.state.eye ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
@@ -87,12 +98,10 @@ class RegistrationStep5 extends React.Component{
                    
                     </div>
                     
-                    <button type="submit"className="btn-yellow" style={{ 
+                    <button className="btn-yellow" style={{ 
                         width: '90%',
                         margin: '50% 0% 10% 0%'
                     }}>Continue</button>
-                </form>
-                
              </div>
             </>
         )

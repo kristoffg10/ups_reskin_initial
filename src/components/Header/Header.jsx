@@ -60,6 +60,12 @@ const Header = () => {
           {/* ======= menu ======= */}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <div className="menu d-flex align-items-center gap-5">
+              
+            </div>
+          </div>
+
+          {/* ======== nav right icons ========= */}
+          <div className="nav__right d-flex align-items-center gap-4">
               {nav__links.map((item, index) => (
                 <NavLink
                   to={item.path}
@@ -71,12 +77,7 @@ const Header = () => {
                   {item.display}
                 </NavLink>
               ))}
-            </div>
-          </div>
-
-          {/* ======== nav right icons ========= */}
-          <div className="nav__right d-flex align-items-center gap-4">
-              <button className="btn btn-light btn-block" type="submit" >
+              <button className="btn btn-ups" type="submit" >
                 <Link to="/login">Login</Link>
               </button>
 
