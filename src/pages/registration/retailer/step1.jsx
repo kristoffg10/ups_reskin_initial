@@ -1,17 +1,20 @@
 import React from "react";
 import philippines from "../../../assets/images/icon/philippines.png"
 import arrowForward from "../../../assets/images/icon/arrowForward.png"
+
+
+
 export default class Step1 extends React.Component{
-    constructor(props){
-        super(props);
+    continue = () =>{
+      this.props.nextStep();
     }
+
 
     render(){
         return(
             <>
                 <h1 className="header-title">Authentication via</h1>
                 <h1 className="header-title-yellow">One-Time-Password</h1>
-
                 <div className="authentication-container">   
                     <div className="telephone-container">
                         <h6>Enter your mobile number</h6>
@@ -27,7 +30,7 @@ export default class Step1 extends React.Component{
                     </div>
                     <div className="varify-container">
                         <span className="email-instead">Use my email instead <span><img src={arrowForward} alt="" srcset="" /></span></span>
-                        <button className="btn-yellow">Verify</button>
+                        <button className="btn-yellow" onClick={this.continue}>Verify</button>
                     </div>
                 </div>
                 

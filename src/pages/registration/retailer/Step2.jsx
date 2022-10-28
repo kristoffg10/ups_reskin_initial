@@ -20,6 +20,12 @@ export default class Step2 extends React.Component{
 
     }
 
+    
+        continue = () =>{
+            this.props.nextStep();
+          }
+
+
     render(){
         var classChecbox = this.state.isChecked ? "checkbox--active" : "";
         return(
@@ -67,7 +73,7 @@ export default class Step2 extends React.Component{
                     <label className="custom-label">Email</label>
                     <input className="custom-input" type="email" value="jdc@gmail.com" defaultValue="jdc@gmail.com" placeholder="mail" />
 
-                    <button className="btn-yellow" style={{ 
+                    <button className="btn-yellow" onClick={this.continue} style={{ 
                         margin: "10% 0% 10% 0%"
                     }}>Continue</button>
                 </div>

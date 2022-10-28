@@ -4,8 +4,6 @@ import styled from "styled-components";
 
 
 
-
-
 const INFO = styled.div`
       &:before {
         content: '${props => props.before}'
@@ -19,7 +17,9 @@ export default class Step4 extends React.Component{
         
     }
 
-    
+    confirm = () =>{
+      this.props.nextStep()
+    }
   
     render(){
        
@@ -47,7 +47,7 @@ export default class Step4 extends React.Component{
                         <hr className="divider" />
                       <h1 className="header-label">Referral Code (optional)</h1>
                       <div className="referal-code"></div>
-                      <button className="btn-yellow" style={{ 
+                      <button className="btn-yellow" onClick={this.confirm} style={{ 
                         width: '90%',
                         margin: '6% 0%'
                        }}>

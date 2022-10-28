@@ -122,6 +122,10 @@ export default class Step3 extends React.Component{
         }
     }
 
+    continue = () =>{
+        this.props.nextStep();
+      }
+
       render(){
         return(
             <>
@@ -162,7 +166,7 @@ export default class Step3 extends React.Component{
                         }}/>
                         <span className="btn-eye" onClick={() => this.handleEyeTrans()}>{this.state.isMatchedTrans ? <span className="pin-match"><img src={iconVerified} alt="verified"  /></span> : ""}  {this.state.eyeTrans ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
                     </div>
-                    <button className="btn-yellow" style={{ 
+                    <button className="btn-yellow" onClick={this.continue} style={{ 
                         width: '90%',
                         margin: '20% 0% 10% 0%'
                     }}>Continue</button>

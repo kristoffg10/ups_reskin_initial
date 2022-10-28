@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import success from "../../../assets/images/icon/success.png"
 
 
-const SpinnerScreen = () =>{
+const SpinnerScreen = ({resetStepDefault}) =>{
     const [loading, setLoading] = useState(false);
     useEffect(() => {
       setLoading(true);
@@ -11,7 +11,9 @@ const SpinnerScreen = () =>{
       }, 3000);
     }, []);
 
-
+const login = () =>{
+ resetStepDefault()
+} 
 return (
     <>
       {loading ? (
@@ -38,7 +40,7 @@ return (
              }}>Thanks for that, now you’re all set.</h2>
             <div className="success-screen">
                <img src={success} alt="" srcset="" className='img-success'/>
-               <button className="btn-black">Proceed to account login</button>
+               <button className="btn-black" onClick={login}>Proceed to account login</button>
             </div>
             
         </div>
