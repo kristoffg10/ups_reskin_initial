@@ -27,6 +27,7 @@
     background-color: #EAEAEA !important;
     border-radius: 10px;
 }
+
 .progress-bar-inner{
     content: "";
         width: 20px;
@@ -378,9 +379,7 @@
 }
 
 .input-eye{
-  width: 30%;
-  max-width: 375px;
-  min-width: 375px;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -395,7 +394,8 @@
  background-color: #F4F4F4;
  border-radius: 10px;
  border: none;
- 
+ font-size: 20px !important;
+ font-weight: 500;
 }
 
 .custom-input2:focus{
@@ -443,11 +443,12 @@
 }
 
 .registration-activation{
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .btn-ups{
@@ -625,4 +626,20 @@
     bottom: 18%;
     left: 18%;
     right: 18%;
+}
+
+.middle-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-information{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.select{
+    width: 100%;
 }

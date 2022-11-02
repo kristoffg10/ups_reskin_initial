@@ -10,6 +10,7 @@ import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import RegistrationRetailer from "../pages/registration/retailer/RegistrationRetailer"
+import RegistrationDealer from "../pages/registration/dealer/RegistrationDealer"
 
 const Routers = () => {
   return (
@@ -24,6 +25,7 @@ const Routers = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/registration/retailer" element={<RegistrationRetailer />}/>
+      <Route path="/registration/dealer" element={<RegistrationDealer />}/>
     </Routes>
   );
 };
