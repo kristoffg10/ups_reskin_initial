@@ -17,6 +17,7 @@ const Footer = () => {
           </Col>
           <Col lg="6" md="6">
             <center>
+              <div>
               <p className="copyright__text">
                 <Link to="">
                   <p>Our Website</p>
@@ -24,7 +25,7 @@ const Footer = () => {
                 <Link to="">
                   <p>Contact Us</p>
                 </Link>
-                <Link to="">
+                {/* <Link to="">
                   <p>Help</p>
                 </Link>
                 <Link to="">
@@ -38,8 +39,9 @@ const Footer = () => {
                 </Link>
                 <Link to="">
                   <p>IOS App</p>
-                </Link>
+                </Link> */}
               </p>
+              </div>
             </center>
           </Col>
           <Col lg="3" md="3">
