@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import RegisterDealer from "../pages/registration/dealer/RegistrationDealer";
+import RegisterRetailer from "../pages/registration/retailer/RegistrationRetailer";
 import HelpPage from "../pages/HelpPage";
 import Dashboard from "../pages/Dashboard";
 
@@ -16,6 +17,7 @@ const Routers = () => {
       <Route path="/help" element={<HelpPage/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/registerDealer" element={<RegisterDealer />} />
+      <Route path="/registerRetailer" element={<RegisterRetailer />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>

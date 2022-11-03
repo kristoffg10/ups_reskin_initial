@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../styles/register.css";
 import arrowBack from "../../../assets/images/icon/arrowBack.png"
-import Step1 from "./Step1";
+import Step1 from "./step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";

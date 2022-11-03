@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import philippines from "../../../assets/images/icon/philippines.png"
 import arrowForward from "../../../assets/images/icon/arrowForward.png"
 
