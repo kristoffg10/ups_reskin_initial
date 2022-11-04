@@ -140,7 +140,7 @@ export default class Step3 extends React.Component{
                         <input type={this.state.inputType} name="pin" className="custom-input2" maxLength={6} value={this.state.pin} onChange={this.handleChangePin}  onKeyUp={this.validatePin} style={{ 
                             borderRadius: '10px 0px 0px 10px'
                             }}/>
-                        <span className="btn-eye" onClick={() => this.handleEye()}>  {this.state.eye ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
+                        <span className="btn-eye" onClick={() => this.handleEye()}>  {this.state.eye ? <img src={EyeIconSlash} alt="" className="icon"/>:<img src={EyeIcon} alt="" className="icon"/>}  </span>
                         {/* <span className="btn-eye"><img src={EyeIcon} alt="" /></span> */}
                     </div>
                     <label className="label">Confirm PIN</label>
@@ -148,7 +148,7 @@ export default class Step3 extends React.Component{
                         <input type={this.state.inputType} name="pinConfirm"  className="custom-input2" maxLength={6}  value={this.state.pinConfirm} onChange={this.handleChangePinConfirm}  onKeyUp={this.validatePin} style={{ 
                         borderRadius: '10px 0px 0px 10px'
                         }}/>
-                        <span className="btn-eye" onClick={() => this.handleEye()}>{this.state.isMatched ? <span className="pin-match"><img src={iconVerified} alt="verified"  /></span> : ""}  {this.state.eye ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
+                        <span className="btn-eye" onClick={() => this.handleEye()}>{this.state.isMatched ? <span className="pin-match"><img src={iconVerified} alt="verified" className="icon-verified" /></span> : ""}  {this.state.eye ? <img src={EyeIconSlash} alt="" className="icon"/>:<img src={EyeIcon} alt="" className="icon"/>}  </span>
                         {/* <span clasName="btn-eye"><img src={EyeIcon} alt="" /></span> */}
                 
                     </div>
@@ -159,14 +159,14 @@ export default class Step3 extends React.Component{
                         <input type={this.state.inputTypeTrans} name="transPass"  className="custom-input2" maxLength={6}  value={this.state.transPass} onChange={this.transPassChange}  onKeyUp={this.validateTrans} style={{ 
                         borderRadius: '10px 0px 0px 10px'
                         }}/>
-                        <span className="btn-eye" onClick={() => this.handleEyeTrans()}>  {this.state.eyeTrans ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
+                        <span className="btn-eye" onClick={() => this.handleEyeTrans()}>  {this.state.eyeTrans ? <img src={EyeIconSlash} alt="" className="icon"/>:<img src={EyeIcon} alt="" className="icon"/>}  </span>
                     </div>
                     <label className="label">Transaction Password Confirm</label>
                     <div className="input-eye">
                         <input type={this.state.inputTypeTrans} name="transPassConfirm"  className="custom-input2" maxLength={6}  value={this.state.transPassConfirm} onChange={this.transPassConfirmChange}  onKeyUp={this.validateTrans} style={{ 
                         borderRadius: '10px 0px 0px 10px'
                         }}/>
-                        <span className="btn-eye" onClick={() => this.handleEyeTrans()}>{this.state.isMatchedTrans ? <span className="pin-match"><img src={iconVerified} alt="verified"  /></span> : ""}  {this.state.eyeTrans ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
+                        <span className="btn-eye" onClick={() => this.handleEyeTrans()}>{this.state.isMatchedTrans ? <span className="pin-match"><img src={iconVerified} alt="verified"  className="icon-verified"/></span> : ""}  {this.state.eyeTrans ? <img src={EyeIconSlash} alt="" className="icon"/>:<img src={EyeIcon} alt="" className="icon"/>}  </span>
                     </div>
                     <button className="btn-yellow" onClick={this.continue} style={{ 
                         width: '90%',

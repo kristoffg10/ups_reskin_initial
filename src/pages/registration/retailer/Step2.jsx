@@ -56,7 +56,9 @@ export default class Step2 extends React.Component{
                                 stroke={this.state.isChecked ? "#fff" : "none"} // only show the checkmark when `isCheck` is `true`
                                 />
                             </svg>
-                            I don’t have middle name
+                            <small style={{ 
+                                alignText: "right"
+                             }}>don’t have middle name</small> 
                         </label>
                     </div>
                     <input className="custom-input" type="text" value="Santos" defaultValue="Santos" placeholder="middle name" onChange={this.handleCheckboxChange} disabled={this.state.isDisabled}/>

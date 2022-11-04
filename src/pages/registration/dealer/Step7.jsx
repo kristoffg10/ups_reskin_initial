@@ -27,7 +27,7 @@ export default class Step7 extends React.Component{
                 <>
                     
                      <h1 className="header-title" style={{ 
-                        marginBottom: "4%"
+                        marginBottom: "40px"
                      }}>Review your <span className="header-title-yellow">details</span></h1>
                      <div className="review-details">
                         <INFO className="info-field" style={{ marginBottom: "15px" }} before="Account Type">Free Account</INFO>

@@ -60,7 +60,7 @@ export default class Step2 extends React.Component{
                             <input type={this.state.inputType} maxLength={6} className="custom-input2"  value={this.state.pin} onChange={this.handleChange} style={{ 
                             borderRadius: '10px 0px 0px 10px'  
                             }}/>
-                            <span className="btn-eye" onClick={() => this.handleEye()}>{this.state.isValid ? <span className="pin-match"><img src={iconVerified} alt="verified"  /></span> : ""}  {this.state.eye ? <img src={EyeIconSlash} alt="" />:<img src={EyeIcon} alt="" />}  </span>
+                            <span className="btn-eye" onClick={() => this.handleEye()}>{this.state.isValid ? <span className="pin-match"><img src={iconVerified} alt="verified"  className="icon-verified"/></span> : ""}  {this.state.eye ? <img src={EyeIconSlash} alt="" className="icon"/>:<img src={EyeIcon} alt="" className="icon"/>}  </span>
                         </div>
                         
                         <button className="btn-yellow" onClick={this.continue} style={{ 

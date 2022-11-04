@@ -90,7 +90,7 @@ export default class Step5 extends React.Component{
         return(
             <>
                 <h1 className="header-title">Input your <span className="header-title-yellow">network</span></h1>
-                 <h1 className="header-title" >details</h1>
+                 <h1 className="header-title" style={{ marginTop: "0px"} }>details</h1>
                  <div className="network-details">
                     <label className="label">Direct Referral RC</label>
                     <input type="text" className="custom-input2" />

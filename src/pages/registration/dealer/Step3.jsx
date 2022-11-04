@@ -34,8 +34,8 @@ export default class Step3 extends React.Component{
                 <div className="step2-header-title">
                     <h1 className="header-title" style={{ 
                         marginRight: "8px"
-                    }}>Fill up your</h1>
-                    <h1 className="header-title-yellow"> Information</h1>
+                    }}>Fill up your <span className="header-title-yellow">Information</span></h1>
+                    
                 </div>
 
                 <div className="form-info">
@@ -58,7 +58,7 @@ export default class Step3 extends React.Component{
                                 />
                             </svg>
                             <small style={{ 
-                                alignText: "right"
+                                textAlign: "right"
                              }}>don’t have middle name</small> 
                         </label>
                     </div>
@@ -77,7 +77,8 @@ export default class Step3 extends React.Component{
                     <input className="custom-input" type="email" value="jdc@gmail.com" defaultValue="jdc@gmail.com" placeholder="mail" />
 
                     <button className="btn-yellow" onClick={this.continue}  style={{ 
-                        margin: "10% 0% 10% 0%"
+                        width: "90%",
+                        margin: "55px auto 50px auto"
                     }}>Continue</button>
                 </div>
             </>
