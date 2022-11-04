@@ -17,7 +17,7 @@ export default class Step1 extends React.Component{
                 <h1 className="header-title-yellow">One-Time-Password</h1>
                 <div className="authentication-container">   
                     <div className="telephone-container">
-                        <h6>Enter your mobile number</h6>
+                        <h6 className="label-center" >Enter your mobile number</h6>
                         <div className="input-con">
                             <div className="country-tel-code"><img src={philippines} alt="" /> <span>+63</span></div>
                             <input className="input-tel" type="text" value="912 345 6789" defaultValue="912 345 6789"  placeholder="enter your number..."/>
