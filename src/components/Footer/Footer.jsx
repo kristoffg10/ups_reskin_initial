@@ -17,29 +17,30 @@ const Footer = () => {
           </Col>
           <Col lg="6" md="6">
             <center>
-              <div>
+              <div className="copyright__text">
               <p className="copyright__text">
-                <Link to="">
+                <Link to="" className="footer_links">
                   <p>Our Website</p>
                 </Link>
-                <Link to="">
+                <Link to="" className="footer_links">
                   <p>Contact Us</p>
                 </Link>
-                {/* <Link to="">
+                <Link to="" className="footer_links">
                   <p>Help</p>
                 </Link>
-                <Link to="">
+                <Link to="" className="footer_links">
                   <p>Privacy Policy</p>
                 </Link>
-                <Link to="">
+                <Link to="" className="footer_links">
                   <p>Terms & Condition</p>
                 </Link>
-                <Link to="">
+                <Link to="" className="footer_links">
                   <p>Android App</p>
                 </Link>
-                <Link to="">
+                <Link to="" className="footer_links">
                   <p>IOS App</p>
-                </Link> */}
+                </Link>
+           
               </p>
               </div>
             </center>
