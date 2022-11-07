@@ -77,11 +77,11 @@ class RegistrationDealer extends React.Component{
             back = <button className="btn-back" onClick={this.prevStep}><img src={arrowBack} alt="" srcset="" /></button>
             inner = <div className="progress-bar-inner" style={{ width: "140px" }}></div>;
         }
-        else if(steps===8){
-            successc = <SpinnerScreen resetStepDefault={this.resetStepDefault}/>;
-            StepCom= ""
-            hideHeader="none"
-        }
+        // else if(steps===8){
+        //     successc = <SpinnerScreen resetStepDefault={this.resetStepDefault}/>;
+        //     StepCom= ""
+        //     hideHeader="none"
+        // }
         return(
             <div className="resgister-step">
                 {/* Header Progress */}
@@ -95,8 +95,10 @@ class RegistrationDealer extends React.Component{
                 </div>
                 {/* Content */}
                 <div className="register-step-content"> 
-                    {StepCom}
-                    {successc}
+                    {/* {StepCom} */}
+                    {/* {successc} */}
+
+                    <SpinnerScreen/>
                 </div>
             </div>
         )
