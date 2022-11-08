@@ -1,0 +1,158 @@
+.middle-content{
+    width: 761px;
+}
+
+.header-content{
+    font-size: 19px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input{
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    font-size: 14px;
+    font-weight: 500;
+    width: 272px;
+    height: 40px;
+    padding-left: 10px;
+}
+.btn-search{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.icon-search{
+    width: 24px;
+    height: 24px;
+}
+
+.create-post{
+    padding: 16px 15px;
+    width: 100%;
+    height: 70px;
+    background-color: #F7F7F7;
+    border: 1px solid #DEDEDE;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 17px;
+    margin: 20px 0px;
+}
+.icon-small{
+    width: 38px;
+    height: 38px;
+}
+
+.create-post-input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    background-color: #F7F7F7;
+    
+}
+
+.btn-create-post{
+    width: 157px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #F4B000;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px;
+    letter-spacing: -0.4%;
+    margin-left: 10px;
+}
+
+.header-label{
+    font-size: 16px;
+    font-weight: 600;
+}
+.card-post-image{
+    border-radius: 15px;
+    border: 1px solid #DEDEDE;
+    padding: 15px;
+}
+.card-post-header{
+    display: flex;
+    justify-content: left;
+}
+
+.header-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc-name{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.account{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.acc-network{
+    display: inline;
+}
+
+.post-tag{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #464B53;
+}
+.post-tag1{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #9B51E0;
+}
+.post-tag::before{
+    display: block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #464B53;
+    margin: 0px 5px;
+}
+
+.card-post-content{
+    width: 100%;
+}
+
+.post-caption{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0px 5px;
+    margin-top: 20px;
+}
+
+.media{
+    width: 100%;
+}
+
+.media-img{
+    width: 100%;
+}
+
+.card-post-toolbar{
+    width: 100%;
+}

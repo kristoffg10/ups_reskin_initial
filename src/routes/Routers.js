@@ -8,6 +8,7 @@ import RegisterDealer from "../pages/registration/dealer/RegistrationDealer";
 import RegisterRetailer from "../pages/registration/retailer/RegistrationRetailer";
 import HelpPage from "../pages/HelpPage";
 import Dashboard from "../pages/Dashboard";
+import LayoutMiddleContent from "../components/Layout/LayoutMiddleContent";
 
 const Routers = () => {
   return (
@@ -20,6 +21,7 @@ const Routers = () => {
       <Route path="/registerRetailer" element={<RegisterRetailer />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/layoutMiddle" element={<LayoutMiddleContent />} />
     </Routes>
   );
 };

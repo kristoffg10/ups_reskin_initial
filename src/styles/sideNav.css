@@ -1,0 +1,134 @@
+
+.side-nav{
+    width: 385px;
+}
+.sidenav-header-title{
+    font-size: 19px;
+    font-weight: 600;
+    color: #F4B000;
+    display: inline;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.humburger-icon{
+   width: 20px;
+   height: 20px;
+   margin-right: 20px;
+}
+
+.side-menu{
+    margin: 25px 0px 0px 25px;
+    padding: 20px 19.42px;
+    width: 334px;
+    height: 793px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 24px -10px rgba(0, 0, 0, 0.2);
+} 
+
+.avatar{
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+.top-info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.u-name{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+}
+
+.account-type{
+    font-weight: 500;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.icon-verified{
+    width: 16px;
+    height: 16px;
+}
+
+.bottom-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 31px 19.42px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-label{
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.info-value{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.divider {
+    border-top: 2px solid #DEDEDE;
+    width: 200px;
+    margin: 0px auto;
+  }
+  .menu-list-con{
+    margin: 20px 10px;
+  }
+  .menu-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-item{
+     font-size: 14px;
+     font-weight: 400;
+     padding: 13px 22.5px;
+  }
+
+  .menu-item-active{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 13px 22.5px;
+    background-color: #F4F9FF;
+    border-radius: 10px;
+ }
+
+  .icon{
+    width:30px;
+    height: 30px;
+    margin-right: 16px;
+  }
+
+  .icon-active{
+    width:30px;
+    height: 30px;
+    margin-right: 16px;
+  }
