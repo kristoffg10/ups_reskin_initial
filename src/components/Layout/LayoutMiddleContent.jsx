@@ -13,6 +13,7 @@ export default class LayoutMiddleContent extends React.Component{
                 display: "flex"
              }}> 
                <SideNav/>
+               {/* will replace as routes */}
                <MiddleContent/>
             </div>
         )
