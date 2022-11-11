@@ -125,7 +125,7 @@ export default class MiddleContent extends React.Component{
                             <button className="btn-link-blue"><span>Show this series</span></button>
                         </div>
                         {/* Post */}
-                        <div className="card-post" style={{ backgroundColor:"#FFFFFF", zIndex: 1, position: "relative" }}>
+                        <div className="card-post" style={{ backgroundColor:"#FFFFFF", zIndex: 2, position: "relative" }}>
                         <div className="card-post-header">
                         <img src={avatar2} alt="" className="icon-small" style={{ marginRight: "15px" }}/>
                         <div className="header-info">
@@ -164,41 +164,34 @@ export default class MiddleContent extends React.Component{
                             backgroundColor:"#FFFFFF", 
                             position: "relative", 
                             top: "-40px", 
-                            zIndex: 0,
+                            zIndex: 1,
                             paddingTop: "40px"}}>
-                        <div className="card-post-header">
-                        <img src={avatar2} alt="" className="icon-small" style={{ marginRight: "15px" }}/>
-                        <div className="header-info">
-                                <div className="account">
-                                        <span className="acc-name">Ben Ten<img src={iconVerified} alt="" srcset="" style={{ width: "14px", height:"14px", marginLeft:"8px"}}/></span>
-                                        <div className="acc-network">
-                                            <span className="post-tag-nobullet">F123456789</span>
-                                            <span className="post-tag">Network</span>
+                            <div className="card-post-header">
+                                <img src={avatar2} alt="" className="icon-small" style={{ marginRight: "15px" }}/>
+                                <div className="header-info">
+                                        <div className="account">
+                                                <span className="acc-name">Ben Ten<img src={iconVerified} alt="" srcset="" style={{ width: "14px", height:"14px", marginLeft:"8px"}}/></span>
+                                                <div className="acc-network">
+                                                    <span className="post-tag-nobullet">F123456789</span>
+                                                    <span className="post-tag">Network</span>
+                                                </div>
+                                        </div>
+                                        <div className="date">
+                                            <small>11:11 PM 06/06/2022 <img src={ellipsis} alt="" srcset="" /></small>
                                         </div>
                                 </div>
-                                <div className="date">
-                                    <small>11:11 PM 06/06/2022 <img src={ellipsis} alt="" srcset="" /></small>
+                            </div>
+                            <div className="card-post-content">
+                                <div className="post-caption">
+                                    <p>First, we need to, ofcourse create an account to paypal.</p>
                                 </div>
-                        </div>
-                        </div>
-                        <div className="card-post-content">
-                            <div className="post-caption">
-                                <p>First, we need to, ofcourse create an account to paypal.</p>
                             </div>
                         </div>
-                        <div className="card-post-toolbar">
-                            <div className="toolbar">
-                                <button className="btn-like-active"><span className="btn-icon-active"><span style={{ marginRight:"8px" }}><img src={likeIcon} alt="" srcset="" /></span>Like</span></button>
-                                <button className="btn-comment-active"><span className="btn-icon-active"><span style={{ marginRight:"8px" }}><img src={CommentIcon} alt="" srcset="" /></span>Comment</span></button>
-                                <button className="btn-share"><span className="btn-icon"><span style={{ marginRight:"8px" }}><img src={shareIcon} alt="" srcset="" /></span>Share</span></button>
-                            </div>
-                            <div className="toolbar-status">
-                                <button className="btn-like-status"><span className="btn-icon-active"><span class="status-count">66</span>Likes</span></button>
-                                <button className="btn-like-status"><span className="btn-icon-active"><span class="status-count">22</span>Comments</span></button>
-                                <button className="btn-like-status"><span className="btn-icon"><span class="status-count">6</span>Shares</span></button>
-                                <button className="btn-arrow-b"><img src={btnArrowB} alt="" /></button>
-                            </div>
+                        <div className="card-indicator" style={{ zIndex:"0" }}>
+                                
                         </div>
+                        <div className="card-indicator" style={{ zIndex:"-1", top:"-160px" }}>
+                                
                         </div>
                     </div>
                     {/* Shared Post */}

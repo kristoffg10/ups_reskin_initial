@@ -1,6 +1,7 @@
 import React from "react";
 import SideNav from "../SideNav/SideNav";
 import MiddleContent from "./MiddleContent";
+import SideContent from "./SideContent";
 
 export default class LayoutMiddleContent extends React.Component{
      constructor(props){
@@ -15,6 +16,7 @@ export default class LayoutMiddleContent extends React.Component{
                <SideNav/>
                {/* will replace as routes */}
                <MiddleContent/>
+               <SideContent/>
             </div>
         )
      }
