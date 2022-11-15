@@ -17,14 +17,15 @@
 .notif-list{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-items: center;
 }
 .notif-item{
     display: flex;
     justify-content: left;
-    justify-items: center;
+    align-items: center;
     width: 100%;
+    margin-bottom: 12px;
 }
 .square{
     content: "";
@@ -39,9 +40,97 @@
     font-size: 13px;
 }
 
+.notif-left{
+    display: flex;
+    align-items: center;
+}
+
+.notif-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.notif-right p{
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0px;
+}
+
 .notif-header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     font-weight: 500;
     width: 100%;
+}
+
+.btn-back{
+    border: none;
+    background-color: transparent;
+}
+
+.favourites-con{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-top: 30px;
+}
+
+.favourites-con::-webkit-scrollbar{
+    display: none;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 100px;
+    border-radius: 12px;
+    border:1px solid #DEDEDE;
+    margin-right: 10px;
+}
+
+.card-box span{
+    font-weight: 500;
+    font-size: 11px;
+    height: 34px;
+}
+
+.card-box img{
+    margin: 14px 30px;
+}
+
+.online-network{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-top: 30px;
+}
+
+.online-network::-webkit-scrollbar{
+    display: none;
+}
+.network-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    margin-right: 6px;
+}
+
+.network-profile span{
+    width: 74px;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 11px;
+    height: 34px;
+    text-align: center;
 }

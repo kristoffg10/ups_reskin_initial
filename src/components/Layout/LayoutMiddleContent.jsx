@@ -11,7 +11,8 @@ export default class LayoutMiddleContent extends React.Component{
      render(){
         return(
             <div style={{ 
-                display: "flex"
+                display: "flex",
+                justifyContent: "space-between"
              }}> 
                <SideNav/>
                {/* will replace as routes */}
